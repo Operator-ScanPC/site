@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
@@ -14,11 +14,13 @@
         alert("1 USD = " + usd + " Руб.")
         var eu = +prompt("Введите курс Евро: ");
         alert("1 Euro = " + eu + " Руб.")
-        var ru = +prompt("")//объявить чему равен 1 усд, 1 евро, спросить сколько есть рублей
+        var ru = +prompt("1 USD = " + usd + " Руб.\n1 Euro = " + eu + " Руб.\nКакую сумму в рублях хотите обменять?")
+        alert(ru + " Руб. = " + (ru / usd).toFixed(2) + "USD\n" + ru + " Руб. = " + (ru / eu).toFixed(2) + "Euro")
         var a = +prompt("Подсчет площади трапеции\nВведите длину основания\n a ")
         var b = +prompt("Подсчет площади трапеции\nВведите длину основания\n b ")
         var h = +prompt("Подсчет площади трапеции\nВведите высоту трапеции\n h ")
-        alert("Площадь трапеции ((a+b)/2)*h=S\n ((" + a + "+" + b + ")/2)*" + h + "=" + ((a + b) / 2) * h + "\nS = "((a + b) / 2) * h) 
+        var s = ((a + b) / 2) * h;
+        alert("Площадь трапеции ((a+b)/2)*h=S\n ((" + a + "+" + b + ")/2)*" + h + "=" + s + "\nS = " + s) 
     </script>
 </body>
 
